@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Be Mine Forever ❤️</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    font-family:Arial, sans-serif;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+button{
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:30px;
+    margin:10px;
+    cursor:pointer;
+}
+
+#yes{
+    background:#ff2b5e;
+    color:white;
+}
+
+#no{
+    background:#ccc;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Krishna ❤️</h1>
+    <h2>Will you be my girlfriend?</h2>
+
+    <button id="yes" onclick="love()">Yes 😍</button>
+    <button id="no" onmouseover="move()">No 😭</button>
+</div>
+
+<script>
+function love(){
+    document.body.innerHTML="<h1 style='text-align:center;margin-top:40vh'>I Love You ❤️</h1>";
+}
+
+function move(){
+    let btn=document.getElementById("no");
+    btn.style.position="absolute";
+    btn.style.left=Math.random()*80+"vw";
+    btn.style.top=Math.random()*80+"vh";
+}
+</script>
+
+</body>
+</html>
